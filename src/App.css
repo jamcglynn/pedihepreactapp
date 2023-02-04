@@ -1,39 +1,47 @@
-.App {
-  text-align: center;
-}
+body {
+  font-family: "Roboto Condensed", sans-serif; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+h1 {
+  color: #0F5298; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
+h2 {
+  color: #2565AE; }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
+h3 {
+  color: #3C99DC; }
 
-.App-link {
-  color: rgb(112, 76, 182);
-}
+h4 {
+  color: #66D3FA; }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
+.site-footer {
+  background-image: white;
+  padding: 20px 0; }
+
+.jumbotron {
+  padding: 30px;
+  background-image: white;
+  margin: 0; }
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
+
+.navbar {
+  background-color: #D5F3FE; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.blogScroll {
+  position: relative;
+  overflow-y: scroll;
+  height: 100px; }
+
+.exerciseLibrary .exerciseLibraryText {
+  color: #0F5298; }
