@@ -1,45 +1,45 @@
-import { Card, CardImg, Container, CardBody, CardHeader } from 'reactstrap';
+import { CardGroup, Card , CardImg, CardTitle, CardText, CardSubtitle, Container, CardBody, CardHeader } from 'reactstrap';
 
 const HomepageCard = () => {
     return(
-        <Container>
-            <Card className='card text-center border-secondary'>
+        <CardGroup>
+            <Card>
                 <CardImg
                     width='100%'
                     src='src\app\assets\exercisehandout.jpg'
                     alt='Exercise handout'
                 />
-                <CardHeader>Browse Exercise Libraries</CardHeader>
                 <CardBody>
-                    <h3 className="card-text">Search by body part, development skill, or by keyword.</h3>
-                    <p className="card-text">Explore curated exercises created by our team members or created by pediatric physical therapists just like you!</p>
+                    <CardTitle>Browse Exercise Libraries</CardTitle>
+                    <CardSubtitle className='mb-2' tag='h3'>Search by body part, development skill, or by keyword.</CardSubtitle>
+                    <CardText>Explore curated exercises created by our team members or created by pediatric physical therapists just like you!</CardText>
                 </CardBody>
             </Card>
-            <Card className='card text-center border-secondary'>
+            <Card>
                 <CardImg 
                     width='100%'
                     src='src\app\assets\uploadyourown.jpg'
                     alt='Sample exercises'
                 />
-                <CardHeader>Upload Your Own Exercises</CardHeader>
                 <CardBody>
-                    <h3 className="card-text">Tailor your home exercise program to meet your needs.</h3>
-                    <p className="card-text">Enable patients and their families to better understand exercise prescription when worded in your own terms.</p>
+                    <CardTitle>Upload Your Own Exercises</CardTitle>
+                    <CardSubtitle className='mb-2' tag='h3'>Tailor your home exercise program to meet your needs.</CardSubtitle>
+                    <CardText>Enable patients and their families to better understand exercise prescription when worded in your own terms.</CardText>
                 </CardBody>
             </Card>
-            <Card className='card text-center border-secondary'>
+            <Card>
                 <CardImg 
                     width='100%'
                     src='src\app\assets\ptoncomputer.jpg'
                     alt='Physical therapist accessing PediHEP on computer'
                 />
-                <CardHeader>View Your Saved Programs</CardHeader>
                 <CardBody>
-                    <h3 className="card-text">Enjoy quick access to previously saved programs.</h3>
-                    <p className="card-text">Easy accessibility and editing allows you to cater to your patients' specific needs.</p>
+                    <CardTitle>View Your Saved Programs</CardTitle>
+                    <CardSubtitle className='mb-2' tag='h3'>Enjoy quick access to previously saved programs.</CardSubtitle>
+                    <CardText>Easy accessibility and editing allows you to cater to your patients' specific needs.</CardText>
                 </CardBody>
             </Card>
-        </Container>
+        </CardGroup>
     );
 }
 

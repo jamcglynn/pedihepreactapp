@@ -1,5 +1,9 @@
+import SubHeader from '../components/SubHeader';
+
 const BlogPage = () => {
-    return <div>BlogPage</div>
+    return (
+        <SubHeader current='Blog' />
+    )
 };
 
 export default BlogPage;

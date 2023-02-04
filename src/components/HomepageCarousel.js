@@ -4,26 +4,32 @@ import {
     CarouselItem,
     CarouselCaption,
     CarouselIndicators,
-    CarouselControl
+    CarouselControl,
 } from 'reactstrap';
+import carousel1 from '../app/assets/carousel1.jpg';
+import carousel2 from '../app/assets/carousel2.jpg';
+import carousel3 from '../app/assets/caudalweightshiftpronebaby.jpg'
 
 const items = [
     {
-        src: 'src\app\assets\carousel1.jpg',
+        src: carousel1,
         altText: 'Baby on physioball with physical therapist',
-        caption: '"PediHEP has helped me create and access custom content for my patients."' + '- John T., PT, DPT',
+        caption: '"PediHEP has helped me create and access custom content for my patients."',
+        creator: '- John T., PT, DPT',
         key: 1,
     },
     {
-        src: 'src\app\assets\carousel2.jpg',
+        src: carousel2,
         altText: 'Girl lifting weights with guidance from physical therapist',
-        caption: '"This site has helped me strengthen rapport with patients & families."' + '- Alexis S., PT, MSPT',
+        caption: '"This site has helped me strengthen rapport with patients & families."',
+        creator: '- Alexis S., PT, MSPT',
         key: 2,
     },
     {
-        src: 'src\app\assets\caudalweightshiftpronebaby.jpg',
+        src: carousel3,
         altText: 'Baby in prone',
-        caption: '"PediHEP has helped expand my exercise prescription and creativity"' + '- Anna M., PT, DPT',
+        caption: '"PediHEP has helped expand my exercise prescription and creativity"',
+        creator: '- Anna M., PT, DPT',
         key: 3,
     },
 ];
@@ -58,7 +64,7 @@ const HomepageCarousel = () => {
             >
                 <img src={item.src} alt={item.altText} className="d-block w-100" />
                 <CarouselCaption
-                    captionText={item.caption}
+                    captionText={item.creator}
                     captionHeader={item.caption}
                 />
             </CarouselItem>
@@ -70,11 +76,10 @@ const HomepageCarousel = () => {
             activeIndex={activeIndex}
             next={next}
             previous={previous}
-            //do I need to spread something here
         >
             <CarouselIndicators
                 items={items}
-                activeInde={activeIndex}
+                activeIndex={activeIndex}
                 onClickHandler={goToIndex}
             />
             {slides}

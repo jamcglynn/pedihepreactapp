@@ -1,5 +1,9 @@
+import SubHeader from '../components/SubHeader';
+
 const ExerciseLibrary = () => {
-    return <div>Exercise Library</div>;
+    return (
+        <SubHeader current='Exercise Library'/>
+    )
 };
 
 export default ExerciseLibrary;

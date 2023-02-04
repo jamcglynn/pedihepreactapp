@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 
 const Footer = () => {
@@ -6,7 +7,24 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col xs={{ size: 2, offset: 1 }} sm='4'>
-                        <h5>This will be site navigation</h5>
+                        <h5>Links</h5>
+                        <ul className='list-unstyled'>
+                            <li>
+                                <Link to='/'>Home</Link>
+                            </li>
+                            <li>
+                                <Link to='/about'>About</Link>
+                            </li>
+                            <li>
+                                <Link to ='/exerciselibrary'>Exercise Library</Link>
+                            </li>
+                            <li>
+                                <Link to='/blog'>Blog</Link>
+                            </li>
+                            <li>
+                                <Link to='/contact'>Contact</Link>
+                            </li>
+                        </ul>
                     </Col>
                     <Col sm='4' className='text-center'>
                         <h5>Social</h5>

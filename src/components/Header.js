@@ -22,6 +22,7 @@ const Header = () => {
                     <Col xs='4' sm='3' md='2' className='align-self-center'>
                         <img src={logo} alt='PediHep logo' className='float-start' />
                         <h1 className='mt-1'>PediHEP</h1>
+                        <p>A home exercise program generator specific for pediatric patient populations.</p>
                     </Col>
                 </NavbarBrand>
                 <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
