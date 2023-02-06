@@ -6,9 +6,9 @@ import {
     CarouselIndicators,
     CarouselControl,
 } from 'reactstrap';
-import carousel1 from '../app/assets/carousel1.jpg';
-import carousel2 from '../app/assets/carousel2.jpg';
-import carousel3 from '../app/assets/caudalweightshiftpronebaby.jpg'
+import carousel1 from '../app/assets/img/carousel1.jpg';
+import carousel2 from '../app/assets/img/carousel2.jpg';
+import carousel3 from '../app/assets/img/caudalweightshiftpronebaby.jpg'
 
 const items = [
     {

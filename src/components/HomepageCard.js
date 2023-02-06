@@ -1,12 +1,14 @@
-import { CardGroup, Card , CardImg, CardTitle, CardText, CardSubtitle, Container, CardBody, CardHeader } from 'reactstrap';
+import { CardGroup, Card , CardImg, CardTitle, CardText, CardSubtitle, CardBody, CardHeader } from 'reactstrap';
+import exercisehandout from '../../src/app/assets/img/exercisehandout.jpg';
+import uploadyourown from '../../src/app/assets/img/uploadyourown.jpg';
+import ptoncomputer from '../../src/app/assets/img/ptoncomputer.jpg';
 
 const HomepageCard = () => {
     return(
         <CardGroup>
             <Card>
                 <CardImg
-                    width='100%'
-                    src='src\app\assets\exercisehandout.jpg'
+                    src={exercisehandout}
                     alt='Exercise handout'
                 />
                 <CardBody>
@@ -17,21 +19,19 @@ const HomepageCard = () => {
             </Card>
             <Card>
                 <CardImg 
-                    width='100%'
-                    src='src\app\assets\uploadyourown.jpg'
+                    src={uploadyourown}
                     alt='Sample exercises'
                 />
                 <CardBody>
                     <CardTitle>Upload Your Own Exercises</CardTitle>
                     <CardSubtitle className='mb-2' tag='h3'>Tailor your home exercise program to meet your needs.</CardSubtitle>
                     <CardText>Enable patients and their families to better understand exercise prescription when worded in your own terms.</CardText>
-                </CardBody>
+                </CardBody> 
             </Card>
             <Card>
                 <CardImg 
-                    width='100%'
-                    src='src\app\assets\ptoncomputer.jpg'
-                    alt='Physical therapist accessing PediHEP on computer'
+                    src={ptoncomputer}
+                    alt='PT accessing PediHEP on computer'
                 />
                 <CardBody>
                     <CardTitle>View Your Saved Programs</CardTitle>

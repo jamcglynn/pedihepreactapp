@@ -9,7 +9,7 @@ import {
     NavItem, 
     Col 
 } from 'reactstrap';
-import logo from '../app/assets/logo.png';
+import logo from '../app/assets/img/logo.png';
 import {NavLink} from 'react-router-dom';
 
 
