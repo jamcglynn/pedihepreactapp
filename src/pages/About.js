@@ -1,6 +1,9 @@
 import SubHeader from '../components/SubHeader';
 import { Container, Row, Col } from 'reactstrap';
 import juliamcglynn from '../app/assets/img/juliamcglynn.PNG';
+import SponsorsList from '../features/sponsors/SponsorsList';
+
+
 
 const AboutPage = () => {
     return (
@@ -20,10 +23,14 @@ const AboutPage = () => {
                         <img src={juliamcglynn} alt="Julia McGlynn, creator of PediHEP" className="d-flex mr-3 img-thumbnail rounded d-block" />
                     </Col>
                 </Row>
+                <Row>
+                    <h3>Check out our sponsors!</h3>
+                    <SponsorsList />
+                </Row>
             </Container>
-        </>
 
-    )
+        </>
+    );
 };
 
 export default AboutPage;
