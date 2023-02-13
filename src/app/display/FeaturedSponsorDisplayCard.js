@@ -3,8 +3,8 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 const FeaturedSponsorDisplayCard = ({item}) => {
     const { image, name, description } = item;
     return(
-        <Card>
-            <CardImg src={image} alt={name} />
+        <Card style={{width: "60%"}} className='mx-auto'>
+            <CardImg src={image} alt={name}  />
             <CardBody>
                 <CardTitle>{name}</CardTitle>
                 <CardText>{description}</CardText>

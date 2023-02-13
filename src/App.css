@@ -14,7 +14,7 @@ h4 {
   color: #66D3FA; }
 
 .site-footer {
-  background-image: white;
+  background-color: #D5F3FE;
   padding: 20px 0; }
 
 .jumbotron {
@@ -30,13 +30,18 @@ h4 {
 .navbar {
   background-color: #D5F3FE; }
 
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.6); }
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    left: auto;
+    right: auto;
+  
+  }
 
 img {
   display: block;
   max-width: 100%;
-  height: auto; }
+  height: auto; } 
 
 .blogScroll {
   position: relative;

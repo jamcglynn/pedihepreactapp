@@ -4,6 +4,8 @@ import { Container, Row, Col } from 'reactstrap';
 import FeaturedSponsor from '../app/display/FeaturedSponsorCard';
 
 
+
+
 const HomePage = () => {
     return (
         <Container>
@@ -16,12 +18,12 @@ const HomePage = () => {
                 </Col>
                 <HomepageCarousel />
             </Row>
-            <Row>
+            <Row className='row row-content'>
                 <Col>
-                    <h3>Check out our blog for the latest advances in pediatric research!</h3>
+                    <h3 className='text-center'>Check out our blog for the latest advances in pediatric research!</h3>
                 </Col>
                 <Col>
-                    <h3>Check out our featured sponsor!</h3>
+                    <h3 className='text-center'>Check out our featured sponsor!</h3>
                     <FeaturedSponsor />
                 </Col>
             </Row>
