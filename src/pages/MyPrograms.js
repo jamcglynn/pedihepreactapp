@@ -1,18 +1,19 @@
 import SubHeader from '../components/SubHeader';
-import BlogNav from '../components/BlogNav';
+import SavedProgramsNav from '../components/SavedProgramsNavigation';
 import { Container, Row } from 'reactstrap';
 
-const BlogPage = () => {
+
+const MyProgramsPage = () => {
     return (
         <>
-            <SubHeader current='Blog' />
+            <SubHeader current='My Programs' />
             <Container>
                 <Row>
-                    <BlogNav />
+                    <SavedProgramsNav />
                 </Row>
             </Container>
         </>
     );
 };
 
-export default BlogPage;
+export default MyProgramsPage;

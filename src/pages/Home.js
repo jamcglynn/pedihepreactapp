@@ -2,6 +2,8 @@ import HomepageCard from '../components/HomepageCard';
 import HomepageCarousel from '../components/HomepageCarousel';
 import { Container, Row, Col } from 'reactstrap';
 import FeaturedSponsor from '../app/display/FeaturedSponsorCard';
+import HomepageAlert from '../components/Alert';
+import BlogCard from '../app/display/BlogCard';
 
 
 
@@ -9,6 +11,7 @@ import FeaturedSponsor from '../app/display/FeaturedSponsorCard';
 const HomePage = () => {
     return (
         <Container>
+            <HomepageAlert />
             <Row className='row row-content'>
                 <HomepageCard />
             </Row>
@@ -21,6 +24,7 @@ const HomePage = () => {
             <Row className='row row-content'>
                 <Col>
                     <h3 className='text-center'>Check out our blog for the latest advances in pediatric research!</h3>
+                    <BlogCard />
                 </Col>
                 <Col>
                     <h3 className='text-center'>Check out our featured sponsor!</h3>

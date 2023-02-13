@@ -11,6 +11,8 @@ import {
 } from 'reactstrap';
 import logo from '../app/assets/img/logo.png';
 import {NavLink} from 'react-router-dom';
+import UserLoginForm from './UserLoginForm';
+import UserSignUpForm from './UserSignUpForm';
 
 
 const Header = () => {
@@ -38,12 +40,17 @@ const Header = () => {
                             <NavLink className='nav-link' to='/exerciselibrary'>Exercise Library</NavLink>
                         </NavItem>
                         <NavItem>
+                            <NavLink className='nav-link' to='/myprograms'>My Programs</NavLink>
+                        </NavItem>
+                        <NavItem>
                             <NavLink className='nav-link' to='/blog'>Blog</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink className='nav-link' to='/contact'>Contact</NavLink>
                         </NavItem>
                     </Nav>
+                    <UserLoginForm />
+                    <UserSignUpForm />
                 </Collapse>
             </Container>
         </Navbar>

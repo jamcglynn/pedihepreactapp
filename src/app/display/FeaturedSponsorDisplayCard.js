@@ -6,8 +6,7 @@ const FeaturedSponsorDisplayCard = ({item}) => {
         <Card style={{width: "60%"}} className='mx-auto'>
             <CardImg src={image} alt={name}  />
             <CardBody>
-                <CardTitle>{name}</CardTitle>
-                <CardText>{description}</CardText>
+                <CardTitle className="d-flex justify-content-center">{name}</CardTitle>
             </CardBody>
         </Card>
     );
