@@ -27,7 +27,7 @@ const HomepageCard = () => {
                 />
                 <CardBody>
                     <CardTitle>
-                        <Link to='/exerciselibrary'><strong>Upload Your Own Exercises</strong></Link>
+                        <Link to='/myprograms'><strong>Upload Your Own Exercises</strong></Link>
                     </CardTitle>
                     <CardSubtitle className='mb-2' tag='h3'>Tailor your home exercise program to meet your needs.</CardSubtitle>
                     <CardText>Enable patients and their families to better understand exercise prescription when worded in your own terms.</CardText>
@@ -39,7 +39,9 @@ const HomepageCard = () => {
                     alt='PT accessing PediHEP on computer'
                 />
                 <CardBody>
-                    <CardTitle><strong>View Your Saved Programs</strong></CardTitle>
+                    <CardTitle>
+                        <Link to='/myprograms'><strong>View Your Saved Programs</strong></Link>
+                    </CardTitle>
                     <CardSubtitle className='mb-2' tag='h3'>Enjoy quick access to previously saved programs.</CardSubtitle>
                     <CardText>Easy accessibility and editing allows you to cater to your patients' specific needs.</CardText>
                 </CardBody>
